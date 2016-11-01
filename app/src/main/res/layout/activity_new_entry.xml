@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context="example.itsme.beautytipsproject.NewEntry">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter New Tip Data"
+        android:textSize="34sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tipTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLines="3"
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Tip Title"
+            android:maxLength="50"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <EditText
+            android:id="@+id/tipType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Tip Type"
+            android:maxLength="15"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/tipDesc_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Tip Description One"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <EditText
+            android:id="@+id/tipDesc_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Tip Description Two"
+            android:inputType="textCapSentences|textMultiLine"/>
+
+        <EditText
+            android:id="@+id/tipDesc_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextshape"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ems="10"
+            android:hint="Tip Description Three"
+            android:inputType="textCapSentences|textMultiLine" />
+
+        <Button
+            android:id="@+id/btn_browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/newbuttonshape"
+            android:layout_marginTop="10dp"
+            android:onClick="getImage"
+            android:text="Browse" />
+
+        <TextView
+            android:id="@+id/imgPath_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextView1"/>
+
+        <TextView
+            android:id="@+id/imgPath_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextView2"/>
+
+        <TextView
+            android:id="@+id/imgPath_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TextView3"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addData"
+        android:background="@drawable/newbuttonshape"
+        android:text="Save"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/selected_img"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/btn_save"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+
+</RelativeLayout>

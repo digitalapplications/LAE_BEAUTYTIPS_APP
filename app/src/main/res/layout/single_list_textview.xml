@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:text="Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_image"
+        android:layout_toEndOf="@+id/list_image"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tvTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/list_image"
+        android:layout_alignRight="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/tvType"
+        android:layout_alignLeft="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <ImageButton
+        android:src="@drawable/del"
+        android:background="@drawable/transparent_bg"
+        android:padding="8dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/delete" />
+   <!-- <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abc"
+        android:focusable="false"/>-->
+
+
+</RelativeLayout>
